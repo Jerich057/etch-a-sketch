@@ -6,11 +6,28 @@
     <title>Etch-A-Sketch</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Grid Test</h1>
-    <div class="grid-sheet" id="gridSheet">
+<body ondragstart="return false" ondrop="return false">
+    <h1>Etch-A-Sketch</h1>
+    <div class="mid-section">
+        <div class="ui-box">
+            <div class="options">
+                <div class="color-options">
+                    <input type="color" id="colorPicker" onmouseleave="updateColorPicker()">
+                    <button id="colorButton" value="ON">Color</button>
+                </div>
+                <button id="rainbowButton" value="OFF">Rainbow</button>
+                <button id="eraseButton" value="OFF">Erase</button>
+                <button id="darkenButton" value="OFF">Darken</button>
+                <button onclick="clearSheet()">Clear</button>
+                <div class="slider-box" id="sliderBox">
+                    <div class="slider-gridtext">Gird Size</div>
+                    <input type="range" min="2" max="100" value="16" id="slider">
+                    <p class="slider-text" id="sliderText">16 x 16</p>
+                </div> 
+            </div>
+            <div class="grid-sheet" id="gridSheet"></div>
+        </div>
     </div>
-
 
 
 

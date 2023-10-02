@@ -1,20 +1,94 @@
 body {
-    background-color: rgb(247, 244, 225);
+    background-color: #fff5ee;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .grid-container {
-    height: 50px;
     display: flex;
+    flex: 1;
 }
 .grid {
-    width: 50px;
-    height: 50px;
-    background-color: rgb(163, 255, 243);
+    background-color: rgb(255, 255, 255);
     border-style: solid;
     border-width: 1px;
+    flex: 1;
 }
 .grid-sheet {
     display: flex;
     flex-direction: column;
+    width: 700px;
+    height: 700px;
+    color: grey;
+}
+.mid-section {
+    display: flex;
     justify-content: center;
     align-items: center;
+}
+.ui-box {
+    display: flex;
+    align-items: center;
+    border-radius: 70px;
+    height: 800px;
+    width: 900px;
+    gap: 10px;
+}
+.options {
+    background-color: #fff5ee;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    border: solid rgb(80, 80, 80) 3px;
+    border-radius: 15px;
+    width: 170px;
+}
+
+input[type=color] {
+    width: 65px;
+    height: 50px; 
+    border-radius: 30%;
+    overflow: hidden;
+    background-color: grey;
+}
+
+input[type=color]::-webkit-color-swatch {
+  border: none;
+  border-radius: 30%;
+  padding: 0;
+}
+
+input[type=color]::-webkit-color-swatch-wrapper {
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+}
+.color-options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+button {
+    border-style: solid;
+    border-color: black;
+    background-color: transparent;
+    height: 50px;
+    border-radius: 15px;
+    width: 125px;
+    outline: none;
+}
+button:active {
+   border-style: solid;
+   background-color: rgb(105, 104, 104);
+}
+.slider-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slider-text { 
+    margin: 10px;
+
 }
