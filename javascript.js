@@ -117,7 +117,7 @@ const updateColorPicker = function () { // update the color value when changing 
     clearErase()
     clearDarken()
     colorButton.value = "ON"
-    colorButton.style.backgroundColor = "rgb(105, 104, 104)"
+    colorButton.style.backgroundColor = "#bfb8b3"
 
 }
 
@@ -125,7 +125,7 @@ const eraseButton = document.getElementById("eraseButton") // Erase button to er
 eraseButton.addEventListener("click", () => {
     if (eraseButton.value === "OFF") {
         eraseButton.value = "ON";
-        eraseButton.style.backgroundColor = "rgb(105, 104, 104)";
+        eraseButton.style.backgroundColor = "#bfb8b3";
         color = "rgb(255, 255, 255";
         clearColor()
         clearRainbow()
@@ -137,11 +137,11 @@ eraseButton.addEventListener("click", () => {
 })
 
 const colorButton = document.getElementById("colorButton") // Color button
-colorButton.style.backgroundColor = "rgb(105, 104, 104)"
+colorButton.style.backgroundColor = "#bfb8b3"
 colorButton.addEventListener("click", () => {
     if (colorButton.value === "OFF") {
         colorButton.value = "ON"
-        colorButton.style.backgroundColor = "rgb(105, 104, 104)"
+        colorButton.style.backgroundColor = "#bfb8b3"
         color = colorPicker.value
         clearErase()
         clearRainbow()
@@ -157,7 +157,7 @@ const rainbowButton = document.getElementById("rainbowButton")
 rainbowButton.addEventListener("click", () => {
         if (rainbowButton.value === "OFF") {
             rainbowButton.value = "ON"
-            rainbowButton.style.backgroundColor = "rgb(105, 104, 104)"
+            rainbowButton.style.backgroundColor = "#bfb8b3"
             clearErase()
             clearColor()
             clearDarken()
@@ -172,7 +172,7 @@ const darkenButton = document.getElementById("darkenButton")
 darkenButton.addEventListener("click", () => {
     if (darkenButton.value === "OFF") {
         darkenButton.value = "ON"
-        darkenButton.style.backgroundColor = "rgb(105, 104, 104)"
+        darkenButton.style.backgroundColor = "#bfb8b3"
         clearRainbow()
         clearErase()
         clearColor()
